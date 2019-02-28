@@ -22,6 +22,7 @@ func TestStringWithInvalidClosingTags(t *testing.T) {
 func TestStringWithValidClosingTags(t *testing.T) {
 	strs := []string {
 		"empty string",
+		`aye <img src="" alt="" />`,
 		`<p>Links:</p><ul><li><a href="foo">Foo</a></li><li><a href="/bar/baz">BarBaz</a></li></ul>Test`,
 		`<p>Links:</p><ul><li><a href="foo">Foo</a></li><li><a href="/bar/baz">BarBaz</a></li></ul><blah>Test</blah>`,
 	}
